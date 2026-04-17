@@ -7,8 +7,12 @@
   const storedTheme = localStorage.getItem("theme");
 
   // Default to light if nothing stored
+  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
   const initialTheme =
-    storedTheme === "dark" || storedTheme === "light" ? storedTheme : "light";
+    storedTheme === "dark" || storedTheme === "light"
+      ? storedTheme
+      : (systemPrefersDark ? "dark" : "light");
 
   function applyTheme(theme) {
     root.setAttribute("data-theme", theme);
