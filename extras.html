@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-palette="rose-blue">
+<head>
+  <link rel="icon" type="images/png" sizes="32x32" href="images/png/favicon-32.png">
+<link rel="icon" type="images/png" sizes="16x16" href="images/png/favicon-16.png">
+<link rel="icon" type="images/png" sizes="192x192" href="images/png/favicon-192.png">
+<link rel="icon" type="images/png" sizes="512x512" href="images/png/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/png/apple-touch-icon.png">
+  <meta charset="UTF-8" />
+  <title>Extras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <header class="site-header">
+    <div class="container">
+      <div class="top-bar">
+        <a href="index.html" class="logo">Ibtihal El Mimouni</a>
+        <nav class="main-nav">
+          <a href="index.html">Homepage</a>
+          <a href="experience.html">Experience</a>
+          <a href="publications.html">Publications</a>
+          <a href="talks-posters.html">Talks &amp; Posters</a>
+          <a href="education.html">Education</a>
+          <a href="extras.html">Extras</a>
+          <button id="theme-toggle"></button>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="card">
+        <h2>Awards &amp; Distinctions</h2>
+        <ul class="list">
+          <li>Best poster prize at SophI.A Summit, France, 2025.</li>
+          <li>Semi-finalist at the student research competition, SIGMETRICS, Italy, 2024.</li>
+          <li>Excellence scholarship by DS4H, University Côte d’Azur, France, 2021.</li>
+          <li>Finalist at an entrepreneurship challenge organised by Moroccan engineering schools, 2019.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Roles</h2>
+        <ul class="list">
+          <!-- <li> Reviewer for:   
+            <ul class="sublist">
+              <li>IEEE Transactions on Automatic Control (TACON)</li>
+              <li>IEEE Conference on Decision and Control (CDC)</li>
+              <li>Northern Lights Deep Learning Conference (NLDL)</li>
+              <li>European Conference on Machine Learning (ECML)</li>
+              <li>European Control Conference (ECC)</li>
+            </ul>
+          </li> -->
+          <li>Volunteer at Terra Numerica, contributing to science outreach activities promoting digital sciences, 2026.</li>
+          <li>Reviewer for journals and conferences including IEEE TACON, CDC, ECML, ECC, and NLDL.</li>
+          <li>Member of the organising team coordinating PhD seminars at INRIA Sophia Antipolis, 2025.</li>
+          <li>Member of university school debate club, 2018.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Ibtihal El Mimouni
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="theme.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const current = window.location.pathname.split("/").pop() || "index.html";
+    const links = document.querySelectorAll(".main-nav a");
+
+    links.forEach(link => {
+      const href = link.getAttribute("href");
+      if (href === current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+</body>
+</html>

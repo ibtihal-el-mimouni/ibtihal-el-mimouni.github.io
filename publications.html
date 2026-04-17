@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-palette="rose-blue">
+<head>
+  <link rel="icon" type="images/png" sizes="32x32" href="images/png/favicon-32.png">
+<link rel="icon" type="images/png" sizes="16x16" href="images/png/favicon-16.png">
+<link rel="icon" type="images/png" sizes="192x192" href="images/png/favicon-192.png">
+<link rel="icon" type="images/png" sizes="512x512" href="images/png/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/png/apple-touch-icon.png">
+  <meta charset="UTF-8" />
+  <title>Publications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <header class="site-header">
+    <div class="container">
+      <div class="top-bar">
+        <a href="index.html" class="logo">Ibtihal El Mimouni</a>
+        <nav class="main-nav">
+          <a href="index.html">Homepage</a>
+          <a href="experience.html">Experience</a>
+          <a href="publications.html">Publications</a>
+          <a href="talks-posters.html">Talks &amp; Posters</a>
+          <a href="education.html">Education</a>
+          <a href="extras.html">Extras</a>
+          <button id="theme-toggle"></button>
+        </nav>
+      </div>      
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="card">
+        <!-- <h1>Publications</h1> -->
+
+        <!-- ===== 2025 ==================================================== -->
+        <div class="pub-year-block">
+          <div class="pub-year-label">2025</div>
+          <div class="pub-year-list">
+
+            <!-- Preprint / under review -->
+            <article class="pub-item">
+              <div class="pub-tag pub-tag--preprint">Preprint</div>
+              <div class="pub-body">
+                <div class="pub-title">
+                  Mohsen Amiri, Konstantin Avrachenkov, Ibtihal El Mimouni, Sindri Magnússon,
+                  “Multi-Armed Restless Bandits in a Latent Markovian Environment”.
+                </div>
+                <div class="pub-venue">
+                  <em>Preprint, under review</em>, 2025.
+                </div>
+                <div class="pub-buttons">
+                  <button
+                    type="button"
+                    class="pub-btn pub-btn-abs"
+                    data-target="abs-latent-mab"
+                  >
+                    ABS
+                  </button>
+                  <a href="https://arxiv.org/abs/2511.09324" class="pub-btn" target="_blank" rel="noopener noreferrer">ARXIV</a>
+                </div>
+
+                <div id="abs-latent-mab" class="pub-abstract">
+
+                  Restless Multi-Armed Bandits (RMABs) are powerful models for decision-making under uncertainty, yet classical formulations typically assume fixed dynamics, an assumption often violated in nonstationary environments. We introduce MARBLE (Multi-Armed Restless Bandits in a Latent Markovian Environment), which augments RMABs with a latent Markov state that induces nonstationary behavior. In MARBLE, each arm evolves according to a latent environment state that switches over time, making policy learning substantially more challenging. We further introduce the Markov-Averaged Indexability (MAI) criterion as a relaxed indexability assumption and prove that, despite unobserved regime switches, under the MAI criterion, synchronous Q-learning with Whittle Indices (QWI) converges almost surely to the optimal Q-function and the corresponding Whittle indices. We validate MARBLE on a calibrated simulator-embedded (digital twin) recommender system, where QWI consistently adapts to a shifting latent state and converges to an optimal policy, empirically corroborating our theoretical findings. 
+                </div>
+              </div>
+            </article>
+
+            <!-- ECML-PKDD 2025 -->
+            <article class="pub-item">
+              <div class="pub-tag pub-tag--conf">Conference</div>
+              <div class="pub-body">
+                <div class="pub-title">
+                  Ibtihal El Mimouni and Konstantin Avrachenkov,
+                  “Fostering Responsibility in Email Marketing: A Contextual Restless Bandit Framework”.
+                </div>
+                <div class="pub-venue">
+                  <em>Proceedings of the European Conference on Machine Learning and
+                    Principles and Practice of Knowledge Discovery in Databases. ECML-PKDD 2025. Lecture Notes in Computer Science, vol 16020. Springer.</em>.
+                </div>
+                <div class="pub-buttons">
+                  <button
+                    type="button"
+                    class="pub-btn pub-btn-abs"
+                    data-target="abs-ecml-2025"
+                  >
+                    ABS
+                  </button>
+                
+                  <a href="https://doi.org/10.1007/978-3-662-72243-5_21" class="pub-btn" target="_blank" rel="noopener noreferrer">
+                    DOI
+                  </a>
+                </div>
+
+                <div id="abs-ecml-2025" class="pub-abstract">
+                  Email marketing is increasingly criticized due to ethical concerns, as bulk email campaigns often result in spam, reduced engagement, and negative user experiences. In addition, there is increasing awareness of the environmental impact, as these large-scale campaigns contribute to carbon emissions. To address these issues, we introduce QWIC-Fair (Q-learning Whittle Index with Context and Fairness), an algorithm that operates within a Contextual Restless Multi-Armed Bandit framework. QWIC-Fair leverages implicit feedback to learn the dynamics of user interactions and thus target users with relevant content. In this model, each user represents an arm of the bandit, evolving as a Markov Decision Process that captures state transitions reflecting their interactions with email contents, while accounting for contextual information. The algorithm also incorporates a fairness constraint to ensure balanced selection and to avoid repetitive targeting of the same users. The experiments conducted, using synthetic and real-world data, show that QWIC-Fair outperforms existing email marketing approaches.
+                </div>
+              </div>
+            </article>
+
+            <!-- NLDL 2025  -->
+            <article class="pub-item">
+              <div class="pub-tag pub-tag--conf">Conference</div>
+              <div class="pub-body">
+                <div class="pub-title">
+                  Ibtihal El Mimouni and Konstantin Avrachenkov,
+                  “Deep Q-Learning with Whittle Index for Contextual Restless Bandits:
+                  Application to Email Recommender Systems”.
+                </div>
+                <div class="pub-venue">
+                  <em>Northern Lights Deep Learning Conference. NLDL 2025. PMLR 265</em>.
+                </div>
+                <div class="pub-buttons">
+                  <button
+                    type="button"
+                    class="pub-btn pub-btn-abs"
+                    data-target="abs-nldl-2025"
+                  >
+                    ABS
+                  </button>
+                  <a href="https://proceedings.mlr.press/v265/mimouni25a.html"
+                     class="pub-btn"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    PMLR
+                  </a>
+                </div>
+
+                <div id="abs-nldl-2025" class="pub-abstract">
+                  In this paper, we introduce DQWIC, a novel algorithm that combines Deep Reinforcement Learning and Whittle index theory within the Contextual Restless Multi-Armed Bandit framework for the discounted criterion. DQWIC is designed to learn in evolving environments typical of real-world applications, such as recommender systems, where user preferences and environmental dynamics evolve over time. In particular, we apply DQWIC to the problem of optimizing email recommendations, where it tackles the dual challenges of enhancing content relevance and reducing spam messages, thereby addressing ethical concerns related to intrusive emailing. The algorithm leverages two neural networks: a Q-network for approximating action-value functions and a Whittle-network for estimating Whittle indices, both of which integrate contextual features to inform decision-making. In addition, the inclusion of context allows us to handle many heterogeneous users in a scalable way. The learning process occurs through a two time scale stochastic approximation, with the Q-network updated frequently to minimize the loss between predicted and target Q-values, and the Whittle-network updated on a slower time scale. To evaluate its effectiveness, we conducted experiments in partnership with a company specializing in digital marketing. Our results, derived from both synthetic and real-world data, show that DQWIC outperforms existing email marketing baselines. 
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ===== 2024 ==================================================== -->
+        <div class="pub-year-block">
+          <div class="pub-year-label">2024</div>
+          <div class="pub-year-list">
+
+            <!-- SIGMETRICS PER 2024 -->
+            <article class="pub-item">
+              <div class="pub-tag pub-tag--conf">Conference</div>
+              <div class="pub-body">
+                <div class="pub-title">
+                  Ibtihal El Mimouni,
+                  “Whittle Index-Based Q-Learning for Contextual Restless Bandits:
+                  A Case Study in Email Marketing”.
+                </div>
+                <div class="pub-venue">
+                  <em>ACM SIGMETRICS Performance Evaluation Review</em>,
+                  Vol. 52, Issue 3, 2024.
+                </div>
+                <div class="pub-buttons">
+                  <button
+                    type="button"
+                    class="pub-btn pub-btn-abs"
+                    data-target="abs-sigmetrics-2024"
+                  >
+                    ABS
+                  </button>
+                  <a href="https://doi.org/10.1145/3725536.3725547"
+                     class="pub-btn"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    DOI
+                  </a>
+                </div>
+
+                <div id="abs-sigmetrics-2024" class="pub-abstract">
+                  Email marketing has become an essential tool for businesses to reach out to potential customers. However, the use of mass marketing raises ethical and environmental issues. In fact, this practice tarnishes domain reputation with potential spamming and overwhelms recipients with irrelevant content. Not only does this decrease user engagement, but it also results in a negative user experience. Moreover, it contributes to significant carbon emissions, especially with emails containing heavy attachments. To address these challenges, we propose a novel approach that frames the problem as a Contextual Restless Bandit Recommender System aiming to target relevant user segments while adapting to dynamic environments. The objective is to offer a more effective and sustainable solution, minimizing unnecessary email transmissions and ensuring that recipients receive content tailored to their profile.
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+  
+<footer class="site-footer">
+  © <span id="year"></span> Ibtihal El Mimouni
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const absButtons = document.querySelectorAll(".pub-btn-abs");
+
+    absButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.dataset.target;
+        const absBox = document.getElementById(targetId);
+        if (!absBox) return;
+
+        const isOpen = absBox.classList.toggle("is-open");
+        btn.classList.toggle("is-active", isOpen);
+      });
+    });
+  });
+</script>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const current = window.location.pathname.split("/").pop() || "index.html";
+    const links = document.querySelectorAll(".main-nav a");
+
+    links.forEach(link => {
+      const href = link.getAttribute("href");
+      if (href === current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+<script src="theme.js"></script>
+
+
+</body>
+</html>
