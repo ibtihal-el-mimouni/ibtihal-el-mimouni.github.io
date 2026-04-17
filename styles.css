@@ -1,4 +1,7 @@
 /* ==== THEME VARIABLES =================================================== */
+:root {
+  color-scheme: light dark;
+}
 
 html {
   font-size: 16px;
