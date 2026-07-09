@@ -997,6 +997,10 @@ ul li {
   border-bottom: none; 
 }
 
+.card ul li::marker {
+  color: var(--accent);
+}
+
 .item-header {
   display: flex;
   flex-wrap: wrap;
